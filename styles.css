@@ -1,15 +1,16 @@
 /* Estilos generales */
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
 
-.montserrat-<uniquifier> {
+
+ {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", serif;
     margin: 0;
     padding: 0;
     display: flex;
