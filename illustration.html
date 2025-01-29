@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Ilustración</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluye la librería Lightbox (opcional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Scriba's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="lettering.html">Lettering</a></li>
+                <li><a href="photography.html">Photography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-section">
+        <div class="gallery">
+            <a href="images/SAM_1199.JPG" data-lightbox="ilustracion" data-title="Ilustración 1">
+                <img src="images/SAM_1199.JPG" alt="Ilustración 1">
+            </a>
+            <a href="images/SAM_1200.JPG" data-lightbox="ilustracion" data-title="Ilustración 2">
+                <img src="images/SAM_1200.JPG" alt="Ilustración 2">
+            </a>
+            <a href="images/SAM_1201.JPG" data-lightbox="ilustracion" data-title="Ilustración 3">
+                <img src="images/SAM_1201.JPG" alt="Ilustración 3">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Scriba95 derechos reservados.</p>
+    </footer>
+
+    <!-- Incluye la librería Lightbox (opcional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/pluggins/lightgallery.min.js"></script>
+    <script>
+        // Inicializar LightGallery
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('mi-galeria'));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriba's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Scriba's Portfolio</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="lettering.html">Lettering</a></li>
+                <li><a href="photography.html">Photography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider de Imágenes</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="slider">
+            <!-- Contenedor de las imágenes -->
+            <div class="slides">
+                <div class="slide active">
+                    <img src="images/slider_1.png" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="images/slider_2.png" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider_3.png" alt="Imagen 3">
+                </div>
+                <div class="slide">
+                    <img src="images/imagen4.jpg" alt="Imagen 4">
+                </div>
+                <div class="slide">
+                    <img src="images/imagen5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+    
+            <!-- Flechas de navegación -->
+            <button class="prev" aria-label="Anterior">&#10094;</button>
+            <button class="next" aria-label="Siguiente">&#10095;</button>
+    
+            <!-- Indicadores de posición -->
+            <div class="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    <!-- Script de Glide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        // Inicializar el slider
+        document.addEventListener('DOMContentLoaded', function () {
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 3000,
+                hoverpause: true,
+                animationDuration: 800
+            }).mount();
+        });
+    </script>
+
+<section class="gallery-section" id="mi-galeria">
+        <h2>illustration</h2>
+        <div class="gallery">
+          <img src="images/SAM_1199.JPG" alt="Branding 1">
+                 </div>
+    </section>
+
+    <section class="gallery-section" id="mi-galeria">
+        <h2>Graphic</h2>
+        <div class="gallery">
+            <img src="images/acondicionador 2.png" alt="Ilustración 1">
+                   </div>
+    </section>
+
+    <section class="gallery-section" id="mi-galeria">
+        <h2>Lettering</h2>
+        <div class="gallery">
+            <img src="images/morgenstern.png" alt="Diseño Web 1">
+                    </div>
+    </section>
+
+    <section class="gallery-section" id="mi-galeria">
+        <h2>Photography</h2>
+        <div class="gallery">
+            <img src="images/fotografia.jpg" alt="Fotografía 1">
+                       
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Scriba95 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
