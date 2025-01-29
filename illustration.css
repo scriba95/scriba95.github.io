@@ -1,21 +1,21 @@
-.gallery {
+.galeria {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+    flex-wrap: wrap; /* Para que las imágenes se acomoden en una cuadrícula */
+    justify-content: space-around;
+  }
 
 .gallery a {
-    flex: 1 1 calc(33.333% - 15px);
-    max-width: calc(33.333% - 15px);
+    flex: 1 1 calc(50% - 50px);
+    max-width: calc(50% - 15px);
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+.galeria img {
+    width: 1000px; /* Ajusta este valor según el tamaño que quieras */
+    margin: 30px;
+  
+    transition: transform 0.5s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }

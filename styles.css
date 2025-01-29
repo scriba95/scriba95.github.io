@@ -60,17 +60,17 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centra las imágenes horizontalmente */
-    gap: 10px; /* Espacio entre imágenes */
+    gap: 40px; /* Espacio entre imágenes */
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 1200px; /* Opcional: Limita el ancho máximo */
     margin: 0 auto; /* Centra el contenedor en la página */
-    padding: 0 20px; /* Añade un poco de padding a los lados */
+    padding: 0 0px; /* Añade un poco de padding a los lados */
 }
 
 .gallery a {
     display: block;
-    width: 200px; /* Ancho fijo para cada imagen */
-    height: 200px; /* Alto fijo para cada imagen */
+    width: 500px; /* Ancho fijo para cada imagen */
+    height: 500px; /* Alto fijo para cada imagen */
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 5px;
