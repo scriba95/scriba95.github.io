@@ -1,4 +1,13 @@
 /* Estilos generales */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,7 +32,7 @@ header h1 {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 30px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -35,7 +44,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #8b8989;
+    
+     border: 2px solid #8b8989; /* Borde alrededor de cada botón */
+     padding: 5px 10px;
+     border-radius: 2px;
+     background-color: transparent; /* Fondo transparente */
+     margin: 0 7px; /* Espaciado entre los botones */
+      
+      
 }
 
 /* Estilos para la galería */
